@@ -48,7 +48,7 @@ ignitionPts(pathIn, clumpDist = 1500, ndays = 3, pSMP = TRUE, pCR = TRUE)
 ##--	or do  help(data=index)  for the standard data sets.
 
 ## The function is currently defined as
-function (x)
+function (pathIn, clumpDist = 1500, ndays = 3, pSMP = TRUE, pCR = TRUE)
 {
   }
 }

@@ -12,10 +12,11 @@ ignitionPts(pathIn, clumpDist = 1500, ndays = 3, pSMP = TRUE, pCR = TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{pathIn}{a data.frame built from burnedPixelDF().
-                    
-%%     ~~Describe \code{x} here~~
-}
+  \item{pathIn}{a data.frame built from burnedPixelDF().}
+  \item{clumpDist}{xxxxx}
+  \item{ndays}{xxxxxx}
+  \item{pSMP}{yyyyyyyy}
+  \item{pCR}{zzzzzzz}
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~

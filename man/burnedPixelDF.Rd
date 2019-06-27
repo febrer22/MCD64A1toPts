@@ -8,13 +8,15 @@
 This function creates a data.frame object (burnedPixelsDF) from the MCD64A1v006 raster layers located in the target folder. The resulting object contains the core data (fireID-clump4-date) to retrieve ignition points and fire perimeters, as well as calculate fire recurrence.
 }
 \usage{
-burnedPixelDF(x,clumpDist)
+burnedPixelDF(pathIn, clumpDist = 1500, ndays = 3, pSMP = TRUE, pCR = TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{x}{a string value representing the path were subfolders Burn_Date/, Burn_Date_Unc/ and QA/ are located.}
+  \item{pathIn}{a string value representing the path were subfolders Burn_Date/, Burn_Date_Unc/ and QA/ are located.}
   \item{clumpDist}{a numeric value with the distance threshold (in meters) afar from which a burned pixels is considered an individual fire event.}
   \item{nDays}{a numeric value with the temporal threshold (in days) from which a burned pixels is considered an individual fire event.}
+  \item{pSMP}{Add pixels with Shortened mapping period (pSMP = True or False. By default is True)}
+  \item{pCR}{Grid cell was relabeled during the contextual relabeling phase of the algorithm (0 = false, 1 = true. By default is True)}
 %%     ~~Describe \code{x} here~~
 }
 \details{
@@ -48,7 +50,7 @@ burnedPixelDF(x,clumpDist)
 ##--	or do  help(data=index)  for the standard data sets.
 
 ## The function is currently defined as
-function (x)
+function (pathIn, clumpDist = 1500, ndays = 3, pSMP = TRUE, pCR = TRUE)
 {
   }
 }

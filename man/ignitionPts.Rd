@@ -8,15 +8,11 @@
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-ignitionPts(pathIn, clumpDist = 1500, ndays = 3, pSMP = TRUE, pCR = TRUE)
+ignitionPts(x)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{pathIn}{a data.frame built from burnedPixelDF().}
-  \item{clumpDist}{xxxxx}
-  \item{ndays}{xxxxxx}
-  \item{pSMP}{yyyyyyyy}
-  \item{pCR}{zzzzzzz}
+  \item{x}{a data.frame built from burnedPixelDF().}
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
@@ -49,7 +45,7 @@ ignitionPts(pathIn, clumpDist = 1500, ndays = 3, pSMP = TRUE, pCR = TRUE)
 ##--	or do  help(data=index)  for the standard data sets.
 
 ## The function is currently defined as
-function (pathIn, clumpDist = 1500, ndays = 3, pSMP = TRUE, pCR = TRUE)
+function (x)
 {
   }
 }
